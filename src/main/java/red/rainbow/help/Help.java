@@ -1,7 +1,6 @@
 package red.rainbow.help;
 
 import com.google.inject.Inject;
-import com.velocitypowered.api.command.Command;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.command.CommandManager;
@@ -17,6 +16,8 @@ import org.slf4j.Logger;
         authors = {"RainbowSpeedy"}
 )
 public class Help {
+
+    public static final String pf = "§8»§r ";
 
     @Inject
     private Logger logger;
