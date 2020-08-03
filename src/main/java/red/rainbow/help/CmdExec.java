@@ -16,10 +16,12 @@ public class CmdExec implements Command {
         if (args.length == 0) {
             source.sendMessage(TextComponent.of(getMainscreen()));
         } else if (args.length == 1) {
-            if (Arrays.stream(getCategories()).anyMatch(Predicate.isEqual(args[0].toLowerCase()))) {
+            if (Arrays.stream(getCategories()).anyMatch(cat -> cat.equalsIgnoreCase(args[0]))) {
                 source.sendMessage(TextComponent.of(getScreenForCategory(args[0])));
+                source.sendMessage(TextComponent.of("Got Category String"));
             } else {
                 source.sendMessage(TextComponent.of(getMainscreen()));
+                source.sendMessage(TextComponent.of("Did not get Category String"));
             }
         }
     }

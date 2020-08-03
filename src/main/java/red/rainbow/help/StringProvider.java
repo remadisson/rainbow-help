@@ -2,7 +2,7 @@ package red.rainbow.help;
 
 public class StringProvider {
 
-    private static String[] categories = {"§ahomes", "§6friends", "§6partys"};
+    private static String[] categories = {"homes", "friends", "partys"};
     private static String mainscreen =
             "§d§lRainbowRED HELPSCREEN§r" +
             "\n§fPlease choose a valid help category by using §o/help [yourChosenCategory].§r" +
